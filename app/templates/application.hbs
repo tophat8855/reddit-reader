@@ -3,8 +3,10 @@
 {{link-to "Knitting" "posts" "knitting"}}
 {{link-to "Ingress" "posts" "ingress"}}
 
-{{input value=search placeholder="Search Reddit"}}
+{{input value=subsearch placeholder="Find a subreddit"}}
+<button {{action 'find'}}>Find</button>
 
+{{input value=search placeholder="Search Reddit"}}
 <button {{action 'search'}}>Search</button>
 
 {{outlet}}

@@ -5,6 +5,10 @@ export default Ember.Route.extend({
     search: function() {
       var searchTerm = this.controllerFor('application').get('search');
       this.transitionTo('search', searchTerm);
+    },
+    find: function() {
+      var subreddit = this.controllerFor('application').get('subsearch');
+      this.transitionTo('subsearch', subreddit);
     }
   }
 });

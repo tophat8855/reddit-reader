@@ -1,0 +1,7 @@
+{{outlet}}
+{{#each subreddit in model}}
+  <li>{{subreddit.data.title}}</li>
+  {{#link-to "posts" subreddit.data.display_name}}
+    <strong>{{subreddit.data.display_name}}</strong>
+  {{/link-to}}
+{{/each}}
